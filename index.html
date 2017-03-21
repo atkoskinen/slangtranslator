@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Slangikääntäjä">
+    <meta name="author" content="Antti Koskinen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        body {
+            background-image: url(images/background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body background-color="transparent">
+    <center>
+        <h1 style="color:white;">Slangikääntäjä</h1>
+        <form action="word.php" target="slangiFrame">
+            <input type="text" class="form-control" name="word" size="35" width="35" placeholder="Kirjoita tähän...">
+            <br>
+            <button type="submit" class="btn btn-default">Hae</button>
+        </form>
+        <iframe name="slangiFrame" src="word.php" frameBorder="0" allowtransparency="true">
+            <a href="word.php">Näytä tulokset</a>
+        </iframe>
+    </center>
+</body>
+
+</html>
